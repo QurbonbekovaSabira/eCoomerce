@@ -1,0 +1,128 @@
+.slick-dots {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+}
+
+.slick-dots button {
+  font-size: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #ebf0ff;
+  background: #ebf0ff;
+  cursor: pointer;
+}
+
+.slick-active button {
+  background-color: $primary;
+}
+
+.slick-arrow {
+  font-size: 0;
+  border: none;
+}
+
+.slick-prev {
+  display: none;
+}
+
+.slick-next {
+  display: none;
+}
+.slick-track {
+  display: flex;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+.hero__bg {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  object-fit: cover;
+}
+.hero__item {
+  position: relative;
+}
+.hero__bg {
+  z-index: -1;
+}
+.hero__item_content {
+  z-index: 10;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+.hero__item_title {
+  color: $white;
+  max-width: 80%;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  margin-bottom: 30px;
+}
+.hero__hourBox {
+  position: absolute;
+  left: 10%;
+  bottom: 20%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.hero__item_hour {
+  padding: 9px 11px;
+  color: #223263;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  border-radius: 5px;
+  background: $white;
+}
+.hero__item_hourDote {
+  color: $white;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.07px;
+}
+.hero__content {
+  display: none;
+}
+.hero {
+  overflow: hidden;
+}
+@media screen and (min-width: 990px) {
+    .hero{
+        position: relative;
+    }
+  .slider {
+    display: none;
+  }
+  .hero__content {
+    display: block;
+  }
+  .hero__content {
+    padding-top: 252px;
+    padding-bottom: 166px;
+    background-repeat: no-repeat;
+    background-image: url("/img/foto/heroBg.png");
+    background-position-x: center;
+    background-size: cover;
+    width: 100%;
+  }
+  .hero__content_title {
+    color: var(--Background-White, #fff);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 150%; /* 96px */
+    letter-spacing: 0.5px;
+    max-width: 573px;
+  }
+}

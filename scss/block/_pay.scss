@@ -1,0 +1,112 @@
+.pay {
+  padding-top: 65px;
+}
+.pay__desc {
+  color: #33a0ff;
+  font-size: 18px;
+  font-weight: 400;
+}
+.pay__desc_last {
+  color: #262626;
+  font-size: 18px;
+  font-weight: 400;
+}
+.pay__descBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 61px;
+  span {
+    color: #c1c8ce;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+.pay__contentBox_item {
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+.pay__deleteBtn {
+  width: 23px;
+  height: 22px;
+  border: none;
+  background-repeat: no-repeat;
+  background-image: url("/img/icon/delete.svg");
+  background-position: center;
+  border-radius: 50%;
+}
+.pay__img {
+  border-radius: 7px;
+  max-width: 107px;
+  height: 94px;
+  img {
+    width: 100%;
+    height: 94px;
+  }
+}
+.pay__title {
+  color: #262626;
+  font-size: 18px;
+  font-weight: 400;
+}
+.pay__congtent_main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  align-items: center;
+  gap: 20px;
+}
+.pay__contentBox {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+  margin-bottom: 55px;
+  span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #f6f7f8;
+  }
+}
+.pay__arrow {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #f6f7f8;
+  margin-bottom: 15px;
+}
+.pay__total_price,
+.pay__price {
+  color: #262626;
+  font-size: 18px;
+  font-weight: 400;
+}
+.pay__btn_box {
+  display: flex;
+  align-items: center;
+  background-color: #f6f7f8;
+  width: 42%;
+  padding-top: 13px;
+  padding-bottom: 11px;
+  padding-left: 10px;
+  padding-right: 10px;
+  gap: 10px;
+}
+.pay__decBtn {
+  width: 8px;
+  height: 8px;
+  background-repeat: no-repeat;
+  background-image: url("/img/icon/minus.svg");
+  background-position: center;
+  background-color: transparent;
+}
+.pay__incBtn {
+  width: 8px;
+  height: 8px;
+  background-repeat: no-repeat;
+  background-image: url("/img/icon/plus.svg");
+  background-position: center;
+  background-color: transparent;
+}

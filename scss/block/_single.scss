@@ -1,0 +1,102 @@
+.single {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.single_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    img {
+      width: 300px;
+      height: 500px;
+
+    }
+    h3 {
+      color: var(--Neutral-Dark, #223263);
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 150%;
+      letter-spacing: 0.5px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    p {
+      color: #262626;
+      font-size: 18px;
+      font-weight: 400;
+      margin-bottom: 40px;
+    }
+    strong {
+      color: var(--Primary-Red, #fb7181);
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 150%;
+      letter-spacing: 0.5px;
+    }
+    button {
+    display: block;
+    margin-top: 15px;
+      background-color: transparent;
+      margin-left: auto;
+      margin-right: auto;
+      &:hover {
+        path {
+          stroke: #354490;
+        }
+      }
+    }
+}
+.single__contentBox{
+    width: 80%;
+}
+
+@media screen and (min-width:990px) {
+    .single {
+        padding-top: 100px;
+        padding-bottom: 100px;
+      }
+      .single_box{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        img {
+          width: 500px;
+          height: 600px;
+        }
+        h3 {
+          color: var(--Neutral-Dark, #223263);
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 150%;
+          letter-spacing: 0.5px;
+          text-align: center;
+          margin-bottom: 20px;
+        }
+        p {
+          color: #262626;
+          font-size: 22px;
+          font-weight: 400;
+          margin-bottom: 40px;
+        }
+        strong {
+          color: var(--Primary-Red, #fb7181);
+          font-size: 32px;
+          font-weight: 700;
+          line-height: 150%;
+          letter-spacing: 0.5px;
+        }
+        button {
+        display: block;
+        margin-top: 15px;
+          background-color: transparent;
+          &:hover {
+            path {
+              stroke: #354490;
+            }
+          }
+        }
+      }
+}

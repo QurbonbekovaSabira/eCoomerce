@@ -1,0 +1,174 @@
+.header__firstBox {
+  display: none;
+}
+.header__secondBox {
+  display: none;
+}
+.header__mobile {
+  padding-top: 30px;
+  padding-bottom: 16px;
+}
+.header__mobileInput {
+  color: #9098b1;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: 0.5px;
+  padding: 12px 16px;
+  padding-left: 48px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid $broad-daylight;
+  background-image: url("/img/icon/searchPrimary.svg");
+  background-repeat: no-repeat;
+  background-position: left 16px center;
+}
+.header__count {
+  color: #fff;
+  align-items: center;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background-color: $wild-watermelon;
+  border-radius: 50%;
+  position: absolute;
+  right: -1px;
+  top: -5px;
+}
+.header__firstBox_cart {
+  position: relative;
+}
+.header__mobile_iconBox{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.header__mobile_container{
+display: grid;
+grid-template-columns: 8fr 0.5fr;
+gap: 30px;
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 990px) {
+  .header__mobile {
+    display: none;
+  }
+  .header__firstBox {
+    display: block;
+    padding-top: 16px;
+    padding-bottom: 45px;
+  }
+  .header__firstBox_lang {
+    color: $nero;
+    font-size: 20px;
+    font-weight: 400;
+    padding-right: 16px;
+    border: none;
+    appearance: none;
+    outline: none;
+    background-repeat: no-repeat;
+    background-image: url("/img/icon/arrow.svg");
+    background-position: right center;
+  }
+  .header__firstBox_selectBox {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .header__firstBox_profile {
+    color: $nero;
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    gap: 7px;
+    &::before {
+      content: url("/img/icon/profile.svg");
+      width: 20px;
+      height: 20px;
+      display: block;
+    }
+  }
+  .header__firstBox_cart {
+    position: relative;
+  }
+  .header__count {
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    padding: 2px 3px;
+    display: inline-block;
+    background-color: $wild-watermelon;
+    border-radius: 50%;
+    position: absolute;
+    right: -1px;
+    top: -5px;
+  }
+  .header__countSubText {
+    color: #262626;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .header__countText {
+    color: #262626;
+    font-size: 20px;
+    font-weight: 400;
+    opacity: 0.5;
+  }
+  .header__firstBox_contentBox {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+  .header__firstBox_cart {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .header__firstBox_totalPrice {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .header__firstBox_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  // header second
+  .header__secondBox_link {
+    color: $nero;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .header__secondBox_linkBox {
+    display: flex;
+    align-items: center;
+    gap: 98px;
+  }
+  .header__secondBox_link:first-child {
+    color: $primary;
+  }
+  .header__secondBox_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header__secondBox {
+    display: block;
+    padding-bottom: 25px;
+  }
+}
